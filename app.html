@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Titanic Survival Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+<form class="form">
+    <h2>Passenger Class</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-pclass-1" name="uiPclass" value="1"/>
+        <label for="radio-pclass-1">1</label>
+        <input type="radio" id="radio-pclass-2" name="uiPclass" value="2" checked/>
+        <label for="radio-pclass-2">2</label>
+        <input type="radio" id="radio-pclass-3" name="uiPclass" value="3"/>
+        <label for="radio-pclass-3">3</label>
+    </div>
+    <h2>Age</h2>
+    <input type="text" id="uiAge" class="floatLabel" name="Age" value="30">
+    <h2>Siblings/Spouses Aboard</h2>
+    <input type="text" id="uiSibSp" class="floatLabel" name="SibSp" value="0">
+    <h2>Fare</h2>
+    <input type="text" id="uiFare" class="floatLabel" name="Fare" value="100">
+    <h2>Sex</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-sex-female" name="uiSex" value="1"/>
+        <label for="radio-sex-female">Female</label>
+        <input type="radio" id="radio-sex-male" name="uiSex" value="0" checked/>
+        <label for="radio-sex-male">Male</label>
+    </div>
+    <button class="submit" type="button">Estimate Survival</button>
+    <div id="uiSurvivalPrediction" class="result">
+        <h2></h2>
+    </div>
+</form>
+</body>
+</html>

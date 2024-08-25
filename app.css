@@ -1,0 +1,95 @@
+/* app.css */
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('titanic-sinking.jpg'); /* Add your Titanic image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.9; /* Adjust the opacity to make it light */
+}
+
+/* Form container */
+.form {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency to see the background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Headings inside the form */
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Radio buttons styling */
+.switch-field {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.switch-field input {
+    display: none;
+}
+
+.switch-field label {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 8px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Button styling */
+button.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.submit:hover {
+    background-color: #45a049;
+}
+
+/* Result display */
+.result h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-top: 20px;
+}
